@@ -2,6 +2,27 @@
     font-family: TacoModern;
     src: url(fonts/TACO.TTF);
 }
+.ui.endgame {
+    display: none;
+}
+.ui.endgame, .ui.startgame {
+    position: absolute;
+    top:100px;
+    width: 478px;
+    /*border: 1px solid #000;*/
+    text-align: center;
+    z-index: 999;
+}
+
+button {
+    background: none;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: "TacoModern", Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+}
+
 .ui {
     font-family: "TacoModern", Arial, Helvetica, sans-serif;
     color: white;

@@ -20,6 +20,8 @@ var Game = function() {
         this.liveCount.innerHTML = this.lives;
         this.scoreCount.innerHTML = ++this.score;
         if( this.lives == 0 ){
+            document.querySelector('.endgame').style.display="block";
+            document.querySelector('.startgame').style.display="block";
             clearInterval(this.main);
         }
 
@@ -74,6 +76,10 @@ var Mate = function(selector, game) {
         renderPosition.call(this);
     }
 }
-
 var MagicHat = new Game;
-MagicHat.init();
+
+document.querySelector('button').addEventListener('click',function(){
+    MagicHat.init();
+    document.querySelector('.endgame').style.display="none";
+    document.querySelector('.startgame').style.display="none";
+})
