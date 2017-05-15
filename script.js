@@ -60,7 +60,7 @@ var Mate = function(selector, game) {
         this.position.y += y + this.modiffer;
         
         if( this.position.y > (game.hat.offsetTop - 25) && 
-            this.position.y < (game.hat.offsetTop + 25) && 
+            this.position.y < (game.hat.offsetTop + 100) && 
             this.position.x > (game.hat.offsetLeft - 25) && 
             this.position.x < (game.hat.offsetLeft + game.hat.offsetWidth + 25)
             || 
