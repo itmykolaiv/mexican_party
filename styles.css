@@ -1,0 +1,71 @@
+@font-face {
+    font-family: TacoModern;
+    src: url(fonts/TACO.TTF);
+}
+.ui {
+    font-family: "TacoModern", Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+}
+.game {
+    background-image: url(img/Flat-scene-wild-west/g56.png);
+    background-size: cover;
+    width:500px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.hat {
+    position: absolute;
+    width:100px;
+    height: 80px;
+    bottom: 50px;
+    transform: rotate(180deg);
+
+}
+
+.rel {
+    height: 20px;
+    height: 20px;
+    background: #444fff; 
+}
+
+.sun {
+    position: absolute;
+    top:20px;
+    left:30px;
+}
+.mate {
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.sun polygon {
+    transform-origin: 50% 50%;
+    animation-iteration-count: infinite;
+}
+
+.sun polygon:nth-child(1){
+    animation-name: sun1;
+    animation-duration: 10s;
+    
+}
+
+.sun polygon:nth-child(2){
+    animation-name: sun1;
+    animation-duration: 7s;
+}
+
+@keyframes sun1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
